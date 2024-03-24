@@ -11,16 +11,32 @@ import java.util.StringTokenizer;
  */
 public class Main {
     public static void main(String[] args) throws IOException {
-        final BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
         // 입력 : 첫 줄에 수의 개수 N, 다음으로 N개의 수
         int n = Integer.parseInt(br.readLine());
-        final StringTokenizer st = new StringTokenizer(br.readLine(), " ");
+        StringTokenizer st = new StringTokenizer(br.readLine(), " ");
 
-        int[] arr = new int[n];
+        int count = 0;
+
         for (int i = 0; i < n; i++) {
-            arr[i] = Integer.parseInt(st.nextToken());
+            int number = Integer.parseInt(st.nextToken());
+            if ( isPrime(number) ) count++;
         }
+
         // 출력 : 주어진 수들 중 소수의 개수
+        System.out.println(count);
+    }
+
+    private static boolean isPrime(int number) {
+        if (number <= 1) {
+            return false;
+        }
+        for (int i = 2; i <= Math.sqrt(number); i++) {
+            if (number % i == 0) {
+                return false;
+            }
+        }
+        return true;
     }
 }
