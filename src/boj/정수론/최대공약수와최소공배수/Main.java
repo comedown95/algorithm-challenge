@@ -1,4 +1,4 @@
-package boj.lv1.최대공약수와최소공배수;
+package boj.정수론.최대공약수와최소공배수;
 
 import java.io.BufferedReader;
 import java.io.IOException;

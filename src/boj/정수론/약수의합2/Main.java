@@ -1,4 +1,4 @@
-package boj.lv1.약수의합2;
+package boj.정수론.약수의합2;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;

@@ -1,4 +1,4 @@
-package boj.lv1.약수의합;
+package boj.정수론.약수의합;
 
 import java.io.BufferedReader;
 import java.io.IOException;
