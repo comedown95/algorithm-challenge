@@ -1,4 +1,4 @@
-package boj.자료구조.스택;
+package boj.자료구조.기초.스택;
 
 import java.io.BufferedReader;
 import java.io.IOException;

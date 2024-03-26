@@ -1,4 +1,4 @@
-package boj.정수론.골드바흐의추측;
+package boj.정수론.기초.골드바흐의추측;
 
 import java.io.BufferedReader;
 import java.io.IOException;

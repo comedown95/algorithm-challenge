@@ -1,4 +1,4 @@
-package boj.자료구조.단어뒤집기;
+package boj.자료구조.기초.단어뒤집기;
 
 import java.io.BufferedReader;
 import java.io.IOException;

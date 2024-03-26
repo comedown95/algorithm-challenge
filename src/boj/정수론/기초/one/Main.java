@@ -1,4 +1,4 @@
-package boj.정수론.one;
+package boj.정수론.기초.one;
 
 import java.util.Scanner;
 

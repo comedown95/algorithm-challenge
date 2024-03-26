@@ -1,4 +1,4 @@
-package boj.정수론.나머지;
+package boj.정수론.기초.나머지;
 
 import java.io.*;
 

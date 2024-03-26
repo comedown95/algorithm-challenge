@@ -1,4 +1,4 @@
-package boj.정수론.소수찾기;
+package boj.정수론.기초.소수찾기;
 
 import java.io.BufferedReader;
 import java.io.IOException;

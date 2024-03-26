@@ -1,4 +1,4 @@
-package boj.정수론.약수;
+package boj.정수론.기초.약수;
 
 import java.io.*;
 import java.util.StringTokenizer;
