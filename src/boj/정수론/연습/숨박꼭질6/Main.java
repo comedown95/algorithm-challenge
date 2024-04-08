@@ -1,4 +1,4 @@
-package boj.정수론.연습.GCD합.숨박꼭질6;
+package boj.정수론.연습.숨박꼭질6;
 
 import java.io.BufferedReader;
 import java.io.IOException;
