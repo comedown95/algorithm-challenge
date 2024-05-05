@@ -1,7 +1,6 @@
-package boj.배열.두수의합;
+package boj.배열.최소길이부분배열의합찾기;
 
 import java.io.*;
-import java.util.Arrays;
 import java.util.StringTokenizer;
 
 public class Main {
@@ -17,30 +16,27 @@ public class Main {
 
         int S = Integer.parseInt(br.readLine());
 
-        Arrays.sort(numbers);
-
-        bw.write(Integer.toString(sumCount(numbers, S)));
+        bw.write(Integer.toString(minSubArrayLen(N, numbers, S)));
         bw.flush();
         bw.close();
         br.close();
     }
 
-    public static int sumCount(int[] numbers, int target) {
-        int left = 0, right = numbers.length - 1, count = 0;
+    public static int minSubArrayLen(int n, int[] numbers, int s) {
+        int start = 0, end = 0, sum = 0, minLen = Integer.MAX_VALUE;
 
-        while (left < right) {
-            int sum = numbers[left] + numbers[right];
-            if (sum == target) {
-                count++;
-                left++;
-                right--;
-            } else if (sum < target) {
-                left++;
-            } else {
-                right--;
+        while (end < n) {
+            sum += numbers[end];
+
+            while (sum >= s) {
+                minLen = Math.min(minLen, end - start + 1);
+                sum -= numbers[start];
+                start++;
             }
+
+            end++;
         }
 
-        return count;
+        return minLen == Integer.MAX_VALUE ? 0 : minLen;
     }
 }

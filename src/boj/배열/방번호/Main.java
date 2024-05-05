@@ -14,9 +14,8 @@ public class Main {
             count[ch - '0']++;
         }
 
-        int sixNine = (count[6] + count[9] + 1) / 2;
+        int max = (count[6] + count[9] + 1) / 2;
 
-        int max = sixNine;
         for (int i = 0; i < 10; i++) {
             if (i != 6 && i != 9) {
                 max = Math.max(max, count[i]);
